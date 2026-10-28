@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amateisati-mmeval_jd023"
+version = "0.1.0"
+description = "抽取数值做分布分析，用中位数绝对偏差识别多模态评测工程师·越狱模板的变体识别上的离群点"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "amateisati" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://amateisati.github.io"
+Repository = "https://github.com/amateisati/mmeval_jd023"
+Issues = "https://github.com/amateisati/mmeval_jd023/issues"
+
+[project.scripts]
+mmeval_jd023 = "mmeval_jd023:main"
+
+[tool.setuptools]
+py-modules = ["mmeval_jd023"]
